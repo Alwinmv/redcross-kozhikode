@@ -170,88 +170,94 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
       </header>
 
       {/* =========================
-          HERO
-      ========================== */}
-      <section
-        id="home"
-        className="relative flex min-h-screen items-center overflow-hidden bg-zinc-950 pt-20"
-      >
-        <div className="absolute right-0 top-1/2 h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-red-600/20 blur-3xl" />
+    HERO
+========================== */}
+<section
+  id="home"
+  className="relative flex min-h-screen items-center overflow-hidden bg-zinc-950 pt-20"
+>
+  <div className="absolute right-0 top-1/2 h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-red-600/20 blur-3xl" />
 
-        <div className="relative mx-auto grid w-full max-w-7xl gap-16 px-6 py-24 lg:grid-cols-2">
+  <div className="relative mx-auto grid w-full max-w-7xl gap-16 px-6 py-24 lg:grid-cols-2">
 
-          {/* Hero Left */}
-          <div className="flex flex-col justify-center">
+    {/* Hero Left */}
+    <div className="flex flex-col justify-center">
 
-            <div className="mb-6 flex items-center gap-3">
-              <span className="h-px w-10 bg-red-500" />
+      <div className="mb-6 flex items-center gap-3">
+        <span className="h-px w-10 bg-red-500" />
 
-              <span className="text-sm font-semibold uppercase tracking-[0.25em] text-red-400">
-                Kozhikode Branch
-              </span>
-            </div>
+        <span className="text-sm font-semibold uppercase tracking-[0.25em] text-red-400">
+          Kozhikode Branch
+        </span>
+      </div>
 
-            <h1 className="max-w-3xl text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Serving Humanity.
-              <span className="block text-red-500">
-                Saving Lives.
-              </span>
-            </h1>
+      <h1 className="max-w-3xl text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
+        Serving Humanity.
+        <span className="block text-red-500">
+          Saving Lives.
+        </span>
+      </h1>
 
-            <p className="mt-7 max-w-xl text-base leading-7 text-zinc-300 sm:text-lg sm:leading-8">
-              Together with our volunteers and community partners,
-              we work to support people, respond to emergencies and
-              build a safer and healthier society.
-            </p>
+      <p className="mt-7 max-w-xl text-base leading-7 text-zinc-300 sm:text-lg sm:leading-8">
+        Together with our volunteers and community partners,
+        we work to support people, respond to emergencies and
+        build a safer and healthier society.
+      </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+      <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
-              <a
-                href="#volunteer"
-                className="rounded-full bg-red-600 px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-red-700"
-              >
-                Become a Volunteer
-              </a>
+        <a
+          href="#volunteer"
+          className="rounded-full bg-red-600 px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-red-700"
+        >
+          Become a Volunteer
+        </a>
 
-              <a
-                href="#activities"
-                className="rounded-full border border-white/20 px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                Explore Our Work
-              </a>
+        <a
+          href="#activities"
+          className="rounded-full border border-white/20 px-7 py-4 text-center text-sm font-semibold text-white transition hover:bg-white/10"
+        >
+          Explore Our Work
+        </a>
 
-            </div>
+      </div>
+    </div>
+
+    {/* Hero Right */}
+    <div className="hidden items-center justify-center lg:flex">
+
+      <div className="relative flex h-[500px] w-[400px] items-center justify-center overflow-hidden rounded-[2rem] bg-red-600">
+
+        <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/10" />
+
+        <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-black/10" />
+
+        <div className="relative text-center text-white">
+
+          <div className="mx-auto flex h-36 w-36 items-center justify-center border-[10px] border-white">
+            <img
+              src="/Indian_Red_Cross_Society_Logo.png"
+              alt="Indian Red Cross Society"
+              className="h-28 w-28 object-contain"
+            />
           </div>
 
-          {/* Hero Right */}
-          <div className="hidden items-center justify-center lg:flex">
+          <p className="mt-8 text-2xl font-bold">
+            Together for Humanity
+          </p>
 
-            <div className="relative flex h-[500px] w-[400px] items-center justify-center overflow-hidden rounded-[2rem] bg-red-600">
-
-              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/10" />
-
-              <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-black/10" />
-
-              <div className="relative text-center text-white">
-
-                <div className="mx-auto flex h-36 w-36 items-center justify-center border-[10px] border-white text-7xl font-light">
-                  +
-                </div>
-
-                <p className="mt-8 text-2xl font-bold">
-                  Together for Humanity
-                </p>
-
-                <p className="mt-2 text-sm text-red-100">
-                  Compassion • Courage • Service
-                </p>
-
-              </div>
-            </div>
-          </div>
+          <p className="mt-2 text-sm text-red-100">
+            Compassion • Courage • Service
+          </p>
 
         </div>
-      </section>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* =========================
           ABOUT
