@@ -242,13 +242,16 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
             />
           </div>
 
-          <p className="mt-8 text-2xl font-bold">
-            Together for Humanity
-          </p>
+      <p className="mt-8 max-w-sm text-2xl font-bold leading-tight">
+  United in Humanity
+</p>
 
-          <p className="mt-2 text-sm text-red-100">
-            Compassion • Courage • Service
-          </p>
+<p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-red-100">
+  • Humanity • Impartiality • Neutrality 
+  <br /> • Independence
+  <br />
+  • Voluntary Service • Unity • Universality
+</p>
 
         </div>
 
@@ -454,9 +457,13 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
     <div className="flex justify-start lg:justify-end">
 
-      <div className="flex h-28 w-28 items-center justify-center rounded-3xl bg-white text-5xl shadow-lg">
-        🩺
-      </div>
+      <div className="flex h-45 w-45 items-center justify-center rounded-3xl bg-white p-4 shadow-lg">
+  <img
+    src="/st-john-ambulance-logo.png"
+    alt="St John Ambulance"
+    className="h-full w-full object-contain"
+  />
+</div>
 
     </div>
 
