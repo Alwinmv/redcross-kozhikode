@@ -18,29 +18,30 @@ export default function Home() {
       <header className="fixed top-0 z-50 w-full border-b border-zinc-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
-          {/* Logo / Brand */}
-          <a
-            href="#home"
-            onClick={closeMenu}
-            className="flex items-center gap-3"
-          >
-            <div className="flex h-11 w-11 items-center justify-center bg-red-600 text-2xl font-bold text-white">
-              +
-            </div>
+         {/* Logo / Brand */}
+<a
+  href="#home"
+  onClick={closeMenu}
+  className="flex items-center gap-3"
+>
+  <img
+  src="/Indian_Red_Cross_Society_Logo.png"
+  alt="Indian Red Cross Society"
+  className="h-17 w-17 object-contain"
+/>
 
-            <div>
-              <p className="text-sm font-bold tracking-wide">
-                INDIAN RED CROSS SOCIETY
-              </p>
+  <div>
+    <p className="text-sm font-bold tracking-wide">
+      INDIAN RED CROSS SOCIETY
+    </p>
 
-              <p className="text-xs text-zinc-500">
-                Kozhikode Branch
-              </p>
-            </div>
-          </a>
-
+    <p className="text-xs text-zinc-500">
+      Kozhikode Branch
+    </p>
+  </div>
+</a>
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-7 md:flex">
+          <nav className="hidden items-center gap-7 md:flex translate-x-58">
             <a
               href="#home"
               className="text-sm font-medium transition hover:text-red-600"
@@ -87,8 +88,7 @@ export default function Home() {
           {/* Desktop Volunteer Button */}
           <a
             href="#volunteer"
-            className="hidden rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-700 sm:block"
-          >
+className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-700 sm:block"          >
             Become a Volunteer
           </a>
 
