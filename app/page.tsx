@@ -596,8 +596,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
               </div>
             </div>
-
-            {/* Donation Card */}
+{/* Donation Card */}
             <div className="relative overflow-hidden rounded-[2rem] bg-zinc-950 p-8 text-white sm:p-10">
 
               <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-red-600/20 blur-2xl" />
@@ -613,46 +612,90 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
                 </h3>
 
                 <p className="mt-4 leading-7 text-zinc-400">
-                  Official donation options and payment details
-                  will be provided here after confirmation from
-                  the Kozhikode Branch.
+                  You can support our work through a direct bank transfer
+                  using the official account details below.
                 </p>
 
                 <div className="mt-8 space-y-4">
 
+                  {/* Bank Transfer */}
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-
                     <p className="text-sm font-semibold text-zinc-300">
-                      Financial Donations
+                      Bank Transfer
                     </p>
 
-                    <p className="mt-1 text-sm text-zinc-500">
-                      Official bank / UPI details to be added.
-                    </p>
+                    <div className="mt-4 space-y-3 text-sm">
+                      <div>
+                        <p className="text-zinc-500">Account Name</p>
+                        <p className="mt-1 font-medium text-zinc-200">
+                          Indian Red Cross Society
+                        </p>
+                      </div>
 
+                      <div>
+                        <p className="text-zinc-500">Account Number</p>
+                        <p className="mt-1 font-medium text-zinc-200">
+                          1424010047296
+                        </p>
+                      </div>
+
+                      <div>
+                        <p className="text-zinc-500">Bank</p>
+                        <p className="mt-1 font-medium text-zinc-200">
+                          Punjab National Bank
+                        </p>
+                      </div>
+
+                      <div>
+                        <p className="text-zinc-500">Branch</p>
+                        <p className="mt-1 font-medium text-zinc-200">
+                          Bank Road, Kozhikode
+                        </p>
+                      </div>
+
+                      <div>
+                        <p className="text-zinc-500">IFSC</p>
+                        <p className="mt-1 font-medium text-zinc-200">
+                          PUNB0425700
+                        </p>
+                      </div>
+                    </div>
                   </div>
+                  <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5 text-center">
 
+  <p className="text-sm font-semibold text-zinc-300">
+    Scan & Pay using UPI
+  </p>
+
+  <img
+    src="/upi-qr.png"
+    alt="UPI QR Code"
+    className="mx-auto mt-4 h-48 w-48 rounded-xl bg-white p-2 object-contain"
+  />
+
+  <p className="mt-4 text-sm font-semibold text-zinc-200">
+    9497651997m@pnb
+  </p>
+
+  <p className="mt-1 text-xs text-zinc-500">
+    Indian Red Cross Society Kozhikode District Branch
+  </p>
+
+</div>
+
+                  {/* Blood Donation */}
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-
                     <p className="text-sm font-semibold text-zinc-300">
                       Blood Donation
                     </p>
 
                     <p className="mt-1 text-sm text-zinc-500">
-                      Contact the branch for upcoming blood
-                      donation camps and requirements.
+                      Contact the branch for upcoming blood donation
+                      camps and requirements.
                     </p>
-
                   </div>
 
                 </div>
-
-                <a
-                  href="#contact"
-                  className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-red-600 px-6 py-4 text-sm font-bold text-white transition hover:bg-red-700"
-                >
-                  Contact the Branch
-                </a>
 
               </div>
             </div>
@@ -663,8 +706,8 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
       {/* =========================
           LEADERSHIP
-      ========================== */}
-      <section
+========================= */}
+<section
         id="leadership"
         className="bg-zinc-950 py-28 text-white"
       >
@@ -864,7 +907,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
                   </p>
 
                   <p className="mt-1 font-medium">
-                    Official contact number to be added
+                    +91 9447222304
                   </p>
                 </div>
 
@@ -874,7 +917,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
                   </p>
 
                   <p className="mt-1 font-medium">
-                    Official email to be added
+                    redcrosskozhikode@gmail.com
                   </p>
                 </div>
 
@@ -1057,15 +1100,15 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
               <div className="mt-5 space-y-3 text-sm text-zinc-500">
 
                 <p>
-                  Kozhikode, Kerala
+                  +91 94472 22304
                 </p>
 
                 <p>
-                  Official phone number to be added
+                  redcrosskozhikode@gmail.com
                 </p>
 
                 <p>
-                  Official email to be added
+                  Kozhikode, Kerala, India
                 </p>
 
               </div>
