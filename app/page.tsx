@@ -551,11 +551,14 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
                 Small contributions can make a big difference.
               </h2>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600">
-                Your support helps us continue humanitarian activities,
-                community programmes, disaster response and initiatives
-                that reach people when they need help the most.
-              </p>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-600 text-pretty">
+  Your support helps us continue humanitarian activities,
+  community programmes and disaster response efforts across
+  Kozhikode. Every contribution helps us support vulnerable
+  communities, assist people during emergencies, promote
+  health and safety, and empower volunteers to serve our
+  community when they are needed most.
+</p>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-2">
 
