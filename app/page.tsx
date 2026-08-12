@@ -31,12 +31,12 @@ export default function Home() {
 />
 
   <div>
-    <p className="text-sm font-bold tracking-wide">
+    <p className="text-sm font-bold tracking-wide text-red-600">
       INDIAN RED CROSS SOCIETY
     </p>
 
     <p className="text-xs text-zinc-500">
-      Kozhikode Branch
+      KOZHIKODE Branch
     </p>
   </div>
 </a>
@@ -329,8 +329,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
           <div className="mt-14 grid gap-6 md:grid-cols-3">
 
             {/* Blood Donation */}
-            <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-
+<div className="group mt-1 rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
                 🩸
               </div>
@@ -825,41 +824,124 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
         </div>
       </section>
 
-      {/* =========================
-          VOLUNTEER CTA
-      ========================== */}
-      <section
-        id="volunteer"
-        className="px-6 py-28 lg:px-8"
+     {/* =========================
+    VOLUNTEER CTA
+========================= */}
+<section
+  id="volunteer"
+  className="px-6 py-28 lg:px-8"
+>
+  <div className="mx-auto max-w-7xl">
+
+    {/* Main Volunteer CTA */}
+    <div className="overflow-hidden rounded-[2rem] bg-red-600 px-8 py-16 text-white sm:px-16 lg:flex lg:items-center lg:justify-between">
+
+      <div className="max-w-2xl">
+
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-100">
+          Make a Difference
+        </p>
+
+        <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+          Your time can make a difference.
+        </h2>
+
+        <p className="mt-5 max-w-xl text-lg leading-8 text-red-100">
+          Join a community of volunteers who believe that every
+          act of kindness can help build a better tomorrow.
+        </p>
+
+      </div>
+
+      <a
+        href="#contact"
+        className="mt-10 inline-flex rounded-full bg-white px-7 py-4 text-sm font-bold text-red-600 transition hover:bg-red-50 lg:mt-0"
       >
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-red-600 px-8 py-16 text-white sm:px-16 lg:flex lg:items-center lg:justify-between">
+        Become a Volunteer
+      </a>
 
-          <div className="max-w-2xl">
+    </div>
 
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-100">
-              Make a Difference
-            </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              Your time can make a difference.
-            </h2>
+    {/* More Ways to Get Involved */}
+    <div className="mt-20">
 
-            <p className="mt-5 max-w-xl text-lg leading-8 text-red-100">
-              Join a community of volunteers who believe that every
-              act of kindness can help build a better tomorrow.
-            </p>
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-600">
+        Get Involved
+      </p>
 
+      <h3 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+        More ways to serve.
+      </h3>
+
+      <p className="mt-4 max-w-2xl text-lg leading-8 text-zinc-600">
+        Explore opportunities to learn, contribute and make a
+        meaningful difference in the community.
+      </p>
+
+
+      {/* Opportunity Cards */}
+      <div className="mt-10 grid gap-6 md:grid-cols-2">
+
+        {/* Student Internship */}
+        <div className="group rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+            🎓
           </div>
+
+          <h3 className="mt-7 text-2xl font-bold">
+            Student Internship & Volunteering
+          </h3>
+
+          <p className="mt-4 leading-7 text-zinc-600">
+            Opportunities for students to gain practical experience
+            through social work, community service and humanitarian
+            activities while contributing to the community.
+          </p>
 
           <a
             href="#contact"
-            className="mt-10 inline-flex rounded-full bg-white px-7 py-4 text-sm font-bold text-red-600 transition hover:bg-red-50 lg:mt-0"
+            className="mt-7 inline-block text-sm font-bold text-red-600 transition hover:text-red-700"
           >
-            Become a Volunteer
+            Learn more →
           </a>
 
         </div>
-      </section>
+
+
+        {/* Community Volunteering */}
+        <div className="group rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+            ❤️
+          </div>
+
+          <h3 className="mt-7 text-2xl font-bold">
+            Community Volunteering
+          </h3>
+
+          <p className="mt-4 leading-7 text-zinc-600">
+            Take part in humanitarian activities, community
+            programmes and initiatives that support people
+            and strengthen local communities.
+          </p>
+
+          <a
+            href="#contact"
+            className="mt-7 inline-block text-sm font-bold text-red-600 transition hover:text-red-700"
+          >
+            Learn more →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* =========================
           CONTACT
@@ -996,39 +1078,40 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
 
-            {/* Brand */}
-            <div className="lg:col-span-2">
+           {/* Brand */}
+<div className="lg:col-span-2">
 
-              <a
-                href="#home"
-                className="flex items-center gap-3"
-              >
+  <a
+    href="#home"
+    className="flex items-center gap-3"
+  >
 
-                <div className="flex h-11 w-11 items-center justify-center bg-red-600 text-2xl font-bold text-white">
-                  +
-                </div>
+    <img
+      src="/Indian_Red_Cross_Society_Logo.png"
+      alt="Indian Red Cross Society"
+      className="h-12 w-auto object-contain"
+    />
 
-                <div>
+    <div>
 
-                  <p className="text-sm font-bold">
-                    INDIAN RED CROSS SOCIETY
-                  </p>
+      <p className="text-sm font-bold">
+        INDIAN RED CROSS SOCIETY
+      </p>
 
-                  <p className="text-xs text-zinc-500">
-                    Kozhikode Branch
-                  </p>
+      <p className="text-xs text-zinc-500">
+        Kozhikode Branch
+      </p>
 
-                </div>
+    </div>
 
-              </a>
+  </a>
 
-              <p className="mt-6 max-w-md leading-7 text-zinc-500">
-                Serving communities with compassion, courage and
-                humanity.
-              </p>
+  <p className="mt-6 max-w-md leading-7 text-zinc-500">
+    Serving communities with compassion, courage and
+    humanity.
+  </p>
 
-            </div>
-
+</div>
             {/* Quick Links */}
             <div>
 
@@ -1072,6 +1155,12 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
                 >
                   Donate
                 </a>
+                <a
+  href="#volunteer"
+  className="block transition hover:text-red-600"
+>
+  Student Internship & Volunteering
+</a>
 
                 <a
                   href="#volunteer"
