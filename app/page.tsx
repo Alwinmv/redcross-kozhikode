@@ -6,7 +6,6 @@ import { supabase } from "@/lib/supabase";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
-  const [uploading, setUploading] = useState(false);
 const loadGalleryImages = async () => {
   const { data, error } = await supabase.storage
     .from("gallery")
@@ -39,48 +38,7 @@ useEffect(() => {
   loadGalleryImages();
 }, []);
 
-const handleGalleryUpload = async (
-  event: React.ChangeEvent<HTMLInputElement>
-) => {
-  const files = event.target.files;
 
-  if (!files || files.length === 0) return;
-
-  setUploading(true);
-
-  try {
-    const uploadedUrls: string[] = [];
-
-    for (const file of Array.from(files)) {
-      const fileExt = file.name.split(".").pop();
-      const fileName = `${Date.now()}-${Math.random()
-        .toString(36)
-        .substring(2)}.${fileExt}`;
-
-      const { error } = await supabase.storage
-        .from("gallery")
-        .upload(fileName, file);
-
-      if (error) {
-        throw error;
-      }
-
-      const { data } = supabase.storage
-        .from("gallery")
-        .getPublicUrl(fileName);
-
-      uploadedUrls.push(data.publicUrl);
-    }
-
-    setGalleryImages((prev) => [...prev, ...uploadedUrls]);
-  } catch (error) {
-    console.error("Upload error:", error);
-    alert("Photo upload failed. Please try again.");
-  } finally {
-    setUploading(false);
-    event.target.value = "";
-  }
-};
   const closeMenu = () => {
     setMenuOpen(false);
   };
@@ -601,8 +559,8 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
           No photos added yet
         </p>
         <p className="mt-1 text-sm">
-          Click “Add Photos” to upload photos
-        </p>
+  Gallery photos will appear here.
+</p>
       </div>
     </div>
   )}
