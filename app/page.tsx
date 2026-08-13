@@ -1,10 +1,86 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+  const [uploading, setUploading] = useState(false);
+const loadGalleryImages = async () => {
+  const { data, error } = await supabase.storage
+    .from("gallery")
+    .list("", {
+      sortBy: {
+        column: "created_at",
+        order: "desc",
+      },
+    });
 
+  if (error) {
+    console.error("Gallery load error:", error);
+    return;
+  }
+
+  const urls = data
+    .filter((file) => file.name)
+    .map((file) => {
+      const { data } = supabase.storage
+        .from("gallery")
+        .getPublicUrl(file.name);
+
+      return data.publicUrl;
+    });
+
+  setGalleryImages(urls);
+};
+
+useEffect(() => {
+  loadGalleryImages();
+}, []);
+
+const handleGalleryUpload = async (
+  event: React.ChangeEvent<HTMLInputElement>
+) => {
+  const files = event.target.files;
+
+  if (!files || files.length === 0) return;
+
+  setUploading(true);
+
+  try {
+    const uploadedUrls: string[] = [];
+
+    for (const file of Array.from(files)) {
+      const fileExt = file.name.split(".").pop();
+      const fileName = `${Date.now()}-${Math.random()
+        .toString(36)
+        .substring(2)}.${fileExt}`;
+
+      const { error } = await supabase.storage
+        .from("gallery")
+        .upload(fileName, file);
+
+      if (error) {
+        throw error;
+      }
+
+      const { data } = supabase.storage
+        .from("gallery")
+        .getPublicUrl(fileName);
+
+      uploadedUrls.push(data.publicUrl);
+    }
+
+    setGalleryImages((prev) => [...prev, ...uploadedUrls]);
+  } catch (error) {
+    console.error("Upload error:", error);
+    alert("Photo upload failed. Please try again.");
+  } finally {
+    setUploading(false);
+    event.target.value = "";
+  }
+};
   const closeMenu = () => {
     setMenuOpen(false);
   };
@@ -494,25 +570,44 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
             </div>
 
-            <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="mt-12">
 
-              <div className="flex aspect-square items-center justify-center rounded-3xl bg-zinc-200 text-zinc-400">
-                Photo 01
-              </div>
+  <div className="mb-6 flex items-center justify-between">
+    <h3 className="text-lg font-bold">
+      Gallery
+    </h3>
+  </div>
 
-              <div className="flex aspect-square items-center justify-center rounded-3xl bg-zinc-300 text-zinc-500">
-                Photo 02
-              </div>
+  {galleryImages.length > 0 ? (
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      {galleryImages.map((image, index) => (
+        <div
+          key={index}
+          className="group relative aspect-square overflow-hidden rounded-3xl bg-zinc-200"
+        >
+          <img
+            src={image}
+            alt={`Gallery photo ${index + 1}`}
+            className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+        </div>
+      ))}
+    </div>
+  ) : (
+    <div className="flex min-h-[220px] items-center justify-center rounded-3xl border-2 border-dashed border-zinc-200 bg-white text-center text-zinc-400">
+      <div>
+        <p className="text-4xl">📸</p>
+        <p className="mt-3 font-medium">
+          No photos added yet
+        </p>
+        <p className="mt-1 text-sm">
+          Click “Add Photos” to upload photos
+        </p>
+      </div>
+    </div>
+  )}
 
-              <div className="flex aspect-square items-center justify-center rounded-3xl bg-zinc-200 text-zinc-400">
-                Photo 03
-              </div>
-
-              <div className="flex aspect-square items-center justify-center rounded-3xl bg-zinc-300 text-zinc-500">
-                Photo 04
-              </div>
-
-            </div>
+</div>
 
             <div className="mt-8 text-center">
 
@@ -894,13 +989,11 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
           </div>
 
           <h3 className="mt-7 text-2xl font-bold">
-            Student Internship & Volunteering
+            Student Internship 
           </h3>
 
           <p className="mt-4 leading-7 text-zinc-600">
-            Opportunities for students to gain practical experience
-            through social work, community service and humanitarian
-            activities while contributing to the community.
+            We provide valuable internship opportunities for students to gain hands-on experience through humanitarian service, social work and community programmes. Students can develop practical skills, gain meaningful field experience and contribute to the community while learning through service.
           </p>
 
           <a
@@ -920,16 +1013,16 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
             ❤️
           </div>
 
-          <h3 className="mt-7 text-2xl font-bold">
-            Community Volunteering
-          </h3>
+         <h3 className="mt-7 text-2xl font-bold">
+  Community Volunteering
+</h3>
 
-          <p className="mt-4 leading-7 text-zinc-600">
-            Take part in humanitarian activities, community
-            programmes and initiatives that support people
-            and strengthen local communities.
-          </p>
-
+<p className="mt-4 text-pretty leading-7 text-zinc-600">
+  Opportunities to serve the community through humanitarian activities,
+  social initiatives and volunteer programmes. Volunteers can gain
+  meaningful experience, support people in need and contribute to
+  building stronger and more caring communities.
+</p>
           <a
             href="#contact"
             className="mt-7 inline-block text-sm font-bold text-red-600 transition hover:text-red-700"
@@ -1113,7 +1206,42 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
     Serving communities with compassion, courage and
     humanity.
   </p>
+<div className="mt-7">
+  <p className="text-sm font-bold">
+    Connect With Us
+  </p>
 
+  <div className="mt-5 space-y-3 text-sm text-zinc-500">
+
+    <a
+      href="https://www.instagram.com/redcrosskozhikode"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block transition hover:text-red-600"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://www.facebook.com/share/1DcLRFgd8G/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block transition hover:text-red-600"
+    >
+      Facebook
+    </a>
+
+    <a
+      href="https://x.com/ircskozhikode"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block transition hover:text-red-600"
+    >
+      X (Twitter)
+    </a>
+
+  </div>
+</div>
 </div>
             {/* Quick Links */}
             <div>
@@ -1162,7 +1290,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   href="#volunteer"
   className="block transition hover:text-red-600"
 >
-  Student Internship & Volunteering
+  Student Internship 
 </a>
 
                 <a
