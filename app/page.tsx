@@ -70,7 +70,7 @@ useEffect(() => {
     </p>
 
     <p className="text-xs text-zinc-500">
-      KOZHIKODE Branch
+      KOZHIKODE 
     </p>
   </div>
 </a>
