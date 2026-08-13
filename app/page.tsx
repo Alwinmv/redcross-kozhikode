@@ -323,7 +323,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
             </p>
 
             <p className="mt-5 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-              The Kozhikode Branch brings together dedicated
+              The District Branch brings together dedicated
               volunteers who serve the community through
               humanitarian, health and disaster-response activities.
             </p>
@@ -780,7 +780,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
             <p className="mt-5 leading-7 text-zinc-400">
               Meet the people who guide and support the work of
-              the Indian Red Cross Society, Kozhikode Branch.
+              the Indian Red Cross Society, District Branch.
             </p>
 
           </div>
