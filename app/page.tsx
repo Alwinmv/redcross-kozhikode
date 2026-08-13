@@ -1190,12 +1190,12 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
     <div>
 
-      <p className="text-sm font-bold">
+      <p className="text-sm font-bold text-red-600">
         INDIAN RED CROSS SOCIETY
       </p>
 
       <p className="text-xs text-zinc-500">
-        Kozhikode Branch
+        KOZHIKODE Branch
       </p>
 
     </div>
