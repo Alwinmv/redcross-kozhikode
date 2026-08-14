@@ -940,99 +940,149 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
           </div>
 
           {/* Leadership Cards */}
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
-            {/* Chairman */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+  {/* President */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Chairman
-              </p>
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      President
+    </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Name to be added
-              </h3>
+    <h3 className="mt-2 text-2xl font-bold">
+      Ms. M.S. Madhavikutty IAS
+    </h3>
 
-              <p className="mt-3 text-sm leading-6 text-zinc-400">
-                Official profile and message will be added after
-                confirmation from the branch.
-              </p>
+    <p className="mt-3 text-sm leading-6 text-zinc-400">
+      District Collector
+    </p>
 
-            </div>
+  </div>
 
-            {/* President */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+  {/* Chairman */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                President
-              </p>
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      Chairman
+    </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Name to be added
-              </h3>
+    <h3 className="mt-2 text-2xl font-bold">
+      Mr. Madanchery Sathyanathan
+    </h3>
 
-              <p className="mt-3 text-sm leading-6 text-zinc-400">
-                Official profile and message will be added after
-                confirmation from the branch.
-              </p>
+  </div>
 
-            </div>
+  {/* Secretary */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-            {/* Secretary */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      Secretary
+    </p>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Secretary
-              </p>
+    <h3 className="mt-2 text-2xl font-bold">
+      Mr. Deepu K
+    </h3>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Name to be added
-              </h3>
+  </div>
 
-              <p className="mt-3 text-sm leading-6 text-zinc-400">
-                Official profile and message will be added after
-                confirmation from the branch.
-              </p>
+  {/* Treasurer */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-            </div>
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
 
-            {/* Treasurer */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      Treasurer
+    </p>
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+    <h3 className="mt-2 text-2xl font-bold">
+      Mr. Ranjeev Kurup
+    </h3>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Treasurer
-              </p>
+  </div>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Name to be added
-              </h3>
+  {/* Vice Chairman 1 */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <p className="mt-3 text-sm leading-6 text-zinc-400">
-                Official profile and message will be added after
-                confirmation from the branch.
-              </p>
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
 
-            </div>
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      Vice Chairman
+    </p>
 
-          </div>
-        </div>
-      </section>
+    <h3 className="mt-2 text-2xl font-bold">
+      Mr. Shan Kattippara
+    </h3>
+
+  </div>
+
+  {/* Vice Chairman 2 */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
+
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      Vice Chairman
+    </p>
+
+    <h3 className="mt-2 text-2xl font-bold">
+      Mr. TA Asokan
+    </h3>
+
+  </div>
+
+  {/* Joint Secretary 1 */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
+
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      Jt. Secretary
+    </p>
+
+    <h3 className="mt-2 text-2xl font-bold">
+      Mr. KK Rajendrakumar
+    </h3>
+
+  </div>
+
+  {/* Joint Secretary 2 */}
+  <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+
+    <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
+      👤
+    </div>
+
+    <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+      Jt. Secretary
+    </p>
+
+    <h3 className="mt-2 text-2xl font-bold">
+      Mr. TK Thajudheen
+    </h3>
+
+  </div>
+
+</div>
 
      {/* =========================
     VOLUNTEER CTA
