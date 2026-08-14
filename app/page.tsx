@@ -717,12 +717,13 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
             <div className="mt-8 text-center">
 
               <a
-                href="#"
-                className="inline-flex rounded-full border border-zinc-300 px-6 py-3 text-sm font-semibold transition hover:border-red-600 hover:text-red-600"
-              >
-                View Full Gallery
-              </a>
-
+  href="https://drive.google.com/drive/folders/1RlA1zsiihIQ9gjEPiqpHLjjbLmB89qFO?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex rounded-full border border-zinc-300 px-6 py-3 text-sm font-semibold transition hover:border-red-600 hover:text-red-600"
+>
+  View Full Gallery
+</a>
             </div>
 
           </div>
