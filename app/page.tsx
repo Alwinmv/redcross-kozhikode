@@ -514,7 +514,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 ========================== */}
 <div
   id="st-john-ambulance"
-  className="mt-20 overflow-hidden rounded-[2rem] bg-red-600 p-8 text-white sm:p-10 lg:p-14"
+  className="relative mt-20 overflow-hidden rounded-[2rem] border border-white/20 bg-red-600 p-8 text-white shadow-2xl shadow-red-900/20 transition duration-500 hover:-translate-y-2 hover:shadow-2xl sm:p-10 lg:p-14"
 >
 
   <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
@@ -540,30 +540,30 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   Training equips individuals with essential lifesaving, emergency response
   and workplace safety skills.
 </p>
-      <div className="mt-8 grid gap-3 sm:grid-cols-3">
+     <div className="mt-8 grid gap-3 sm:grid-cols-3">
 
-        <div className="rounded-2xl bg-white/10 p-4">
-          <p className="font-semibold">First Aid</p>
-          <p className="mt-1 text-sm text-red-100">
-            Practical first-aid training
-          </p>
-        </div>
+  <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
+    <p className="font-semibold">First Aid</p>
+    <p className="mt-1 text-sm text-red-100">
+      Practical first-aid training
+    </p>
+  </div>
 
-        <div className="rounded-2xl bg-white/10 p-4">
-          <p className="font-semibold">Emergency Response</p>
-          <p className="mt-1 text-sm text-red-100">
-            Essential emergency skills
-          </p>
-        </div>
+  <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
+    <p className="font-semibold">Emergency Response</p>
+    <p className="mt-1 text-sm text-red-100">
+      Essential emergency skills
+    </p>
+  </div>
 
-        <div className="rounded-2xl bg-white/10 p-4">
-          <p className="font-semibold">Community Service</p>
-          <p className="mt-1 text-sm text-red-100">
-            Supporting people when needed
-          </p>
-        </div>
+  <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
+    <p className="font-semibold">Community Service</p>
+    <p className="mt-1 text-sm text-red-100">
+      Supporting people when needed
+    </p>
+  </div>
 
-      </div>
+</div>
 
     </div>
 
@@ -617,34 +617,34 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
       <div className="mt-8 grid gap-3 sm:grid-cols-3">
 
-        <div className="rounded-2xl bg-red-50 p-4">
-          <p className="font-semibold text-zinc-900">
-            Humanitarian Service
-          </p>
-          <p className="mt-1 text-sm text-zinc-600">
-            Serving communities with compassion
-          </p>
-        </div>
+  <div className="rounded-2xl bg-red-50 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <p className="font-semibold text-zinc-900">
+      Humanitarian Service
+    </p>
+    <p className="mt-1 text-sm text-zinc-600">
+      Serving communities with compassion
+    </p>
+  </div>
 
-        <div className="rounded-2xl bg-red-50 p-4">
-          <p className="font-semibold text-zinc-900">
-            Leadership
-          </p>
-          <p className="mt-1 text-sm text-zinc-600">
-            Developing responsible young leaders
-          </p>
-        </div>
+  <div className="rounded-2xl bg-red-50 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <p className="font-semibold text-zinc-900">
+      Leadership
+    </p>
+    <p className="mt-1 text-sm text-zinc-600">
+      Developing responsible young leaders
+    </p>
+  </div>
 
-        <div className="rounded-2xl bg-red-50 p-4">
-          <p className="font-semibold text-zinc-900">
-            Lifesaving Skills
-          </p>
-          <p className="mt-1 text-sm text-zinc-600">
-            Training, awareness and preparedness
-          </p>
-        </div>
+  <div className="rounded-2xl bg-red-50 p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+    <p className="font-semibold text-zinc-900">
+      Lifesaving Skills
+    </p>
+    <p className="mt-1 text-sm text-zinc-600">
+      Training, awareness and preparedness
+    </p>
+  </div>
 
-      </div>
+</div>
 
     </div>
 
