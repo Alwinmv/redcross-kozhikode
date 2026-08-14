@@ -891,7 +891,6 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
                   {/* Blood Donation */}
                   <div
-  id="blood-donation"
   className="rounded-2xl border border-white/10 bg-white/5 p-5"
 >
   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-400">
