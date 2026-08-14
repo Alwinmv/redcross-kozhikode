@@ -360,87 +360,162 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
           </div>
 
           {/* Activity Cards */}
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
+<div className="mt-14 grid gap-6 md:grid-cols-3">
 
-            {/* Blood Donation */}
-<div className="group mt-1 rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
-                🩸
-              </div>
+  {/* Blood Donation */}
+  <div className="group mt-1 rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+      🩸
+    </div>
 
-              <h3 className="mt-7 text-2xl font-bold">
-                Blood Donation
-              </h3>
+    <h3 className="mt-7 text-2xl font-bold">
+      Blood Donation
+    </h3>
 
-              <p className="mt-4 leading-7 text-zinc-600">
-                Organising blood donation initiatives and encouraging
-                people to come forward and help save lives.
-              </p>
+    <p className="mt-4 leading-7 text-zinc-600">
+      Organising blood donation initiatives and encouraging
+      people to come forward and help save lives.
+    </p>
 
-              <a
-                href="#donate"
-                className="mt-7 inline-block text-sm font-bold text-red-600"
-              >
-                Learn more →
-              </a>
+    <a
+  href="#blood-donation"
+  className="mt-7 inline-block text-sm font-bold text-red-600"
+>
+  Learn more →
+</a>
+  </div>
 
-            </div>
+  {/* Disaster response and management */}
+  <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
 
-            {/* Disaster response and management */}
-            <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+      🚑
+    </div>
 
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
-                🚑
-              </div>
+    <h3 className="mt-7 text-2xl font-bold">
+      Disaster response and management
+    </h3>
 
-              <h3 className="mt-7 text-2xl font-bold">
-                Disaster response and management
-              </h3>
+    <p className="mt-4 leading-7 text-zinc-600">
+      Supporting communities during emergencies through
+      trained volunteers and humanitarian action.
+    </p>
 
-              <p className="mt-4 leading-7 text-zinc-600">
-                Supporting communities during emergencies through
-                trained volunteers and humanitarian action.
-              </p>
+    <a
+      href="#contact"
+      className="mt-7 inline-block text-sm font-bold text-red-600"
+    >
+      Learn more →
+    </a>
+  </div>
 
-              <a
-                href="#contact"
-                className="mt-7 inline-block text-sm font-bold text-red-600"
-              >
-                Learn more →
-              </a>
+  {/* First Aid */}
+  <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
 
-            </div>
+    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+      🩺
+    </div>
 
-            {/* First Aid */}
-            <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+    <h3 className="mt-7 text-2xl font-bold">
+      First Aid & St John Ambulance
+    </h3>
 
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
-                🩺
-              </div>
+    <p className="mt-4 leading-7 text-zinc-600">
+      Helping people learn essential first-aid and emergency
+      response skills through practical training.
+    </p>
 
-              <h3 className="mt-7 text-2xl font-bold">
-                First Aid & St John Ambulance
-              </h3>
+    <a
+  href="#st-john-ambulance"
+  className="mt-7 inline-block text-sm font-bold text-red-600"
+>
+  Learn more →
+</a>
+  </div>
 
-              <p className="mt-4 leading-7 text-zinc-600">
-                Helping people learn essential first-aid and emergency
-                response skills through practical training.
-              </p>
+  {/* Family News Service */}
+  <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
 
-              <a
-                href="#contact"
-                className="mt-7 inline-block text-sm font-bold text-red-600"
-              >
-                Learn more →
-              </a>
+    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+      👨‍👩‍👧‍👦
+    </div>
 
-            </div>
+    <h3 className="mt-7 text-2xl font-bold">
+      Family News Service
+    </h3>
 
-          </div>
+    <p className="mt-4 leading-7 text-zinc-600">
+      Tracing missing relatives affected by conflict or disaster,
+      re-establishing links between separated family members and
+      supporting individuals searching for their families.
+    </p>
+
+    <a
+      href="#contact"
+      className="mt-7 inline-block text-sm font-bold text-red-600"
+    >
+      Learn more →
+    </a>
+  </div>
+
+  {/* Youth Red Cross */}
+  <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+
+    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+      🎓
+    </div>
+
+    <h3 className="mt-7 text-2xl font-bold">
+      Youth Red Cross (YRC)
+    </h3>
+
+    <p className="mt-4 leading-7 text-zinc-600">
+      Engaging young people in humanitarian service, health
+      awareness, first aid, disaster preparedness and community
+      welfare while developing leadership, teamwork and lifesaving skills.
+    </p>
+
+    <a
+  href="#youth-red-cross"
+  className="mt-7 inline-block text-sm font-bold text-red-600"
+>
+  Learn more →
+</a>
+  </div>
+
+  {/* Junior Red Cross */}
+  <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+
+    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+      🧑‍🏫
+    </div>
+
+    <h3 className="mt-7 text-2xl font-bold">
+      Junior Red Cross (JRC)
+    </h3>
+
+    <p className="mt-4 leading-7 text-zinc-600">
+      Encouraging students across schools to participate in
+      training, awareness and community-service activities while
+      developing humanitarian values, leadership, teamwork and compassion.
+    </p>
+
+    <a
+      href="#contact"
+      className="mt-7 inline-block text-sm font-bold text-red-600"
+    >
+      Learn more →
+    </a>
+  </div>
+
+</div>
           {/* =========================
     ST JOHN AMBULANCE
 ========================== */}
-<div className="mt-20 overflow-hidden rounded-[2rem] bg-red-600 p-8 text-white sm:p-10 lg:p-14">
+<div
+  id="st-john-ambulance"
+  className="mt-20 overflow-hidden rounded-[2rem] bg-red-600 p-8 text-white sm:p-10 lg:p-14"
+>
 
   <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
 
@@ -454,13 +529,17 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   First Aid & Emergency Response
 </p>
 
-      <p className="mt-5 text-base leading-7 text-red-50 sm:text-lg sm:leading-8">
-        Through our St John Ambulance activities, we provide
-        first-aid and emergency response training to help
-        individuals and communities become better prepared
-        to respond when help is needed most.
-      </p>
+      <p className="mt-5 max-w-3xl text-justify text-base leading-7 text-red-50 sm:text-lg sm:leading-8">
+  St. John Ambulance provides internationally valid and Central and
+  State-Government recognised certificate courses in First Aid, BLS,
+  Emergency Care, CPR and AED for driving and conductor licence applicants,
+  railway staff, petroleum and gas company employees, mining and industrial
+  workers, fire and safety personnel, and skilled factory workers in India
+  and overseas.
 
+  Training equips individuals with essential lifesaving, emergency response
+  and workplace safety skills.
+</p>
       <div className="mt-8 grid gap-3 sm:grid-cols-3">
 
         <div className="rounded-2xl bg-white/10 p-4">
@@ -503,7 +582,75 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   </div>
 
 </div>
+{/* =========================
+    YOUTH RED CROSS (YRC)
+========================== */}
+<div
+  id="youth-red-cross"
+  className="mt-10 overflow-hidden rounded-[2rem] border border-red-100 bg-white p-8 shadow-sm sm:p-10 lg:p-14"
+>
+  <div className="grid gap-10">
 
+    <div className="max-w-full">
+
+      <h3 className="mt-3 text-4xl font-extrabold uppercase tracking-tight text-red-600 sm:text-5xl">
+        Youth Red Cross (YRC)
+      </h3>
+
+      <p className="mt-3 text-lg font-semibold text-red-600 sm:text-xl">
+        Empowering Youth through Selfless Service.
+      </p>
+
+      <p className="mt-5 text-justify text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
+        The Youth Red Cross (YRC) of the Indian Red Cross Society, Kozhikode
+        District Branch engages young people in humanitarian service, health
+        awareness, first aid, disaster preparedness and community welfare
+        activities. YRC units function in higher education institutions as well
+        as at the community level, providing students and young volunteers with
+        opportunities to develop leadership, teamwork and lifesaving skills
+        while serving society. Through training programmes, awareness
+        campaigns, volunteering and community-service initiatives, YRC
+        encourages young people to uphold the principles and values of the Red
+        Cross and become responsible, compassionate and active members of their
+        communities.
+      </p>
+
+      <div className="mt-8 grid gap-3 sm:grid-cols-3">
+
+        <div className="rounded-2xl bg-red-50 p-4">
+          <p className="font-semibold text-zinc-900">
+            Humanitarian Service
+          </p>
+          <p className="mt-1 text-sm text-zinc-600">
+            Serving communities with compassion
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-red-50 p-4">
+          <p className="font-semibold text-zinc-900">
+            Leadership
+          </p>
+          <p className="mt-1 text-sm text-zinc-600">
+            Developing responsible young leaders
+          </p>
+        </div>
+
+        <div className="rounded-2xl bg-red-50 p-4">
+          <p className="font-semibold text-zinc-900">
+            Lifesaving Skills
+          </p>
+          <p className="mt-1 text-sm text-zinc-600">
+            Training, awareness and preparedness
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
           {/* Gallery */}
           <div className="mt-28">
 
@@ -722,6 +869,8 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
     Scan & Pay using UPI
   </p>
 
+ <div id="blood-donation">
+
   <img
     src="/upi-qr.png"
     alt="UPI QR Code"
@@ -732,6 +881,8 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
     9497651997m@pnb
   </p>
 
+</div>
+
   <p className="mt-1 text-xs text-zinc-500">
     Indian Red Cross Society Kozhikode District Branch
   </p>
@@ -739,16 +890,19 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 </div>
 
                   {/* Blood Donation */}
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-                    <p className="text-sm font-semibold text-zinc-300">
-                      Blood Donation
-                    </p>
+                  <div
+  id="blood-donation"
+  className="rounded-2xl border border-white/10 bg-white/5 p-5"
+>
+  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-400">
+    Blood Donation
+  </p>
 
-                    <p className="mt-1 text-sm text-zinc-500">
-                      Contact the branch for upcoming blood donation
-                      camps and requirements.
-                    </p>
-                  </div>
+  <p className="mt-1 text-sm text-zinc-300">
+    Contact the branch for upcoming blood donation
+    camps and requirements.
+  </p>
+</div>
 
                 </div>
 
@@ -1043,7 +1197,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
                   </p>
 
                   <p className="mt-1 font-medium">
-                    +91 9447222304
+                    +91 9447222304, +91 9447276824
                   </p>
                 </div>
 
@@ -1278,7 +1432,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
               <div className="mt-5 space-y-3 text-sm text-zinc-500">
 
                 <p>
-                  +91 94472 22304
+               +91 94472 22304, +91 94472 76824
                 </p>
 
                 <p>
