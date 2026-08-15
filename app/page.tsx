@@ -356,35 +356,107 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
               our volunteers are committed to helping people
               when they need it most.
             </p>
-
           </div>
+          {/* Blood Donation */}
+<div
+  className="relative mt-20 overflow-hidden rounded-[2rem] border border-red-500/20 bg-zinc-950 p-8 text-white shadow-2xl shadow-black/20 transition duration-500 hover:-translate-y-2 hover:border-red-500/40 hover:shadow-red-900/20 sm:p-10 lg:p-14"
+>
+  <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-red-600/10 blur-3xl" />
+
+  <div className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
+
+    <div className="max-w-3xl">
+
+      <h3 className="text-2xl font-extrabold uppercase tracking-tight sm:text-3xl">
+        Blood Donation
+      </h3>
+
+      <p className="mt-3 text-lg font-semibold text-red-400 sm:text-xl">
+        Striving for 100% voluntary blood donation.
+      </p>
+
+      <p className="mt-5 max-w-3xl text-justify text-base leading-7 text-zinc-300 sm:text-lg sm:leading-8">
+        Sometimes, a small act of kindness can help save a life. Blood donation is one of the simplest and most meaningful ways to support someone in need. Through our blood donation initiatives, we encourage individuals and communities to come forward and donate blood, helping ensure that safe and timely blood is available to patients during emergencies, medical treatments and other critical situations.
+      </p>
+
+      <div className="mt-8 grid gap-3 sm:grid-cols-3">
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-red-500/20 hover:bg-white/10">
+          <p className="font-semibold">
+            Save Lives
+          </p>
+          <p className="mt-1 text-sm text-zinc-400">
+            Every donation can help save a life
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-red-500/20 hover:bg-white/10">
+          <p className="font-semibold">
+            Community Support
+          </p>
+          <p className="mt-1 text-sm text-zinc-400">
+            Helping people when they need it most
+          </p>
+        </div>
+
+       <a
+  href="#blood-donation"
+  className="block cursor-pointer rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-red-500/20 hover:bg-white/10"
+>
+  <p className="font-semibold">
+    Donate Blood
+  </p>
+
+  <p className="mt-1 text-sm text-zinc-400">
+    Be a reason for someone's hope
+  </p>
+</a>
+
+      </div>
+
+    </div>
+
+    <div className="flex justify-start lg:justify-end">
+
+      <div className="flex h-45 w-45 items-center justify-center rounded-3xl border border-red-500/20 bg-red-500/10 shadow-xl shadow-red-900/20 transition duration-500 hover:scale-105">
+        <span className="text-7xl">
+          🩸
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
           {/* Activity Cards */}
 <div className="mt-14 grid gap-6 md:grid-cols-3">
 
-  {/* Blood Donation */}
-  <div className="group mt-1 rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
-      🩸
-    </div>
+ {/* Psychological Support */}
+<div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
 
-    <h3 className="mt-7 text-2xl font-bold">
-      Blood Donation
-    </h3>
-
-    <p className="mt-4 leading-7 text-zinc-600">
-      Organising blood donation initiatives and encouraging
-      people to come forward and help save lives.
-    </p>
-
-    <a
-  href="#blood-donation"
-  className="mt-7 inline-block text-sm font-bold text-red-600"
->
-  Learn more →
-</a>
+  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50 text-2xl">
+    🫂
   </div>
 
+  <h3 className="mt-7 text-2xl font-bold">
+    Psychological Support
+  </h3>
+
+  <p className="mt-4 leading-7 text-zinc-600">
+    Providing care, compassion and emotional support to people
+    facing difficult situations, helping them feel heard, supported
+    and less alone during challenging times.
+  </p>
+
+  <a
+      href="#contact"
+      className="mt-7 inline-block text-sm font-bold text-red-600"
+    >
+      Learn more →
+    </a>
+  </div>
+  
   {/* Disaster response and management */}
   <div className="group rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
 
@@ -417,7 +489,8 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
     </div>
 
     <h3 className="mt-7 text-2xl font-bold">
-      First Aid & St John Ambulance
+      First Aid Training
+ & St- John Ambulance
     </h3>
 
     <p className="mt-4 leading-7 text-zinc-600">
@@ -567,17 +640,30 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
     </div>
 
-    <div className="flex justify-start lg:justify-end">
+    <div className="flex flex-col items-start lg:items-center">
 
-      <div className="flex h-45 w-45 items-center justify-center rounded-3xl bg-white p-4 shadow-lg">
-  <img
-    src="/st-john-ambulance-logo.png"
-    alt="St John Ambulance"
-    className="h-full w-full object-contain"
-  />
+  {/* St John Ambulance Logo */}
+  <div className="flex h-44 w-44 items-center justify-center rounded-3xl bg-white p-4 shadow-lg">
+    <img
+      src="/st-john-ambulance-logo.png"
+      alt="St John Ambulance"
+      className="h-full w-full object-contain"
+    />
+  </div>
+
+  {/* Certificate Verification */}
+  <a
+    href="https://ircsfa.org/Home/VerifyCertificate"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group mt-5 w-44 rounded-2xl border border-white/30 bg-white/95 p-4 text-center text-zinc-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-2xl"
+  >
+    <p className="mt-3 text-xs font-bold text-red-600">
+      Verify Certificate →
+    </p>
+  </a>
+
 </div>
-
-    </div>
 
   </div>
 
@@ -871,7 +957,6 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   </p>
 
  <div id="blood-donation">
-
   <img
     src="/upi-qr.png"
     alt="UPI QR Code"
@@ -881,7 +966,6 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   <p className="mt-4 text-sm font-semibold text-zinc-200">
     9497651997m@pnb
   </p>
-
 </div>
 
   <p className="mt-1 text-xs text-zinc-500">
@@ -1021,7 +1105,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
                 👤
               </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text--400red">
                 Vice Chairman
               </p>
 
@@ -1403,6 +1487,14 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
     >
       X (Twitter)
     </a>
+    <a
+  href="https://www.youtube.com/@youthredcrosskozhikode4849"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block transition hover:text-red-600"
+>
+  YouTube
+</a>
 
   </div>
 </div>

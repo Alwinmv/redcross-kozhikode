@@ -1,7 +1,5 @@
 @import "tailwindcss";
-html {
-  scroll-behavior: smooth;
-}
+
 @font-face {
   font-family: "Olde English";
   src: url("/fonts/OldEnglish.ttf") format("truetype");
