@@ -1029,11 +1029,10 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
            {/* President */}
 <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-  <div className="flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-zinc-800">
-    <img
+<div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">    <img
       src="/president.jpg"
       alt="Ms. M.S. Madhavikutty IAS"
-      className="h-full w-full object-cover"
+      className="h-full w-full object-cover object-top"
     />
   </div>
 
@@ -1050,40 +1049,46 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   </p>
 
 </div>
-            {/* Chairman */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+           {/* Chairman */}
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">
+    <img
+      src="/chairman.jpg"
+      alt="Mr. Madanchery Sathyanathan"
+      className="h-full w-full object-cover object-top"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Chairman
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    Chairman
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Mr. Madanchery Sathyanathan
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Mr. Madanchery Sathyanathan
+  </h3>
 
-            </div>
-
+</div>
             {/* Secretary */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">
+    <img
+      src="/secretary.jpg"
+      alt="Mr. Deepu K"
+      className="h-full w-full object-cover object-top"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Secretary
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    Secretary
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Mr. Deepu K
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Mr. Deepu K
+  </h3>
 
-            </div>
-
+</div>
             {/* Treasurer */}
             <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
@@ -1118,22 +1123,26 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
             </div>
 
-            {/* Vice Chairman 2 */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+           {/* Vice Chairman 2 */}
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">
+    <img
+      src="/vice-chairman-ta-asokan.jpg"
+      alt="Mr. TA Asokan"
+      className="h-full w-full object-cover object-top"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Vice Chairman
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    Vice Chairman
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Mr. TA Asokan
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Mr. TA Asokan
+  </h3>
 
-            </div>
+</div>
 
             {/* Joint Secretary 1 */}
             <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
