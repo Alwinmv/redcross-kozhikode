@@ -1026,27 +1026,30 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
           {/* Leadership Cards */}
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
-            {/* President */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+           {/* President */}
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-zinc-800">
+    <img
+      src="/president.jpg"
+      alt="Ms. M.S. Madhavikutty IAS"
+      className="h-full w-full object-cover"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                President
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    President
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Ms. M.S. Madhavikutty IAS
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Ms. M.S. Madhavikutty IAS
+  </h3>
 
-              <p className="mt-3 text-sm leading-6 text-zinc-400">
-                District Collector
-              </p>
+  <p className="mt-3 text-sm leading-6 text-zinc-400">
+    District Collector
+  </p>
 
-            </div>
-
+</div>
             {/* Chairman */}
             <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
@@ -1212,7 +1215,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
     {/* More Ways to Get Involved */}
     <div className="mt-20">
 
-      <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-600">
+      <p className="text-2xl font-bold uppercase tracking-[0.2em] text-red-600">
         Get Involved
       </p>
 
