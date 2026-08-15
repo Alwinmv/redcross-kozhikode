@@ -1089,39 +1089,47 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   </h3>
 
 </div>
-            {/* Treasurer */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+           {/* Treasurer */}
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">
+    <img
+      src="/Ranjeev-Kurup.jpg"
+      alt="Mr. Ranjeev Kurup"
+      className="h-full w-full object-cover object-top"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Treasurer
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    Treasurer
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Mr. Ranjeev Kurup
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Mr. Ranjeev Kurup
+  </h3>
 
-            </div>
+</div>
 
             {/* Vice Chairman 1 */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">
+    <img
+      src="/ViceShan-Kattippara.jpg"
+      alt="Mr. Shan Kattippara"
+      className="h-full w-full object-cover object-top"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text--400red">
-                Vice Chairman
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    Vice Chairman
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Mr. Shan Kattippara
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Mr. Shan Kattippara
+  </h3>
 
-            </div>
+</div>
 
            {/* Vice Chairman 2 */}
 <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
@@ -1145,39 +1153,46 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 </div>
 
             {/* Joint Secretary 1 */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">
+    <img
+      src="/Secretary-Rajendrakumar.jpg"
+      alt="Mr. KK Rajendrakumar"
+      className="h-full w-full object-cover object-top"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Jt. Secretary
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    Jt. Secretary
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Mr. KK Rajendrakumar
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Mr. KK Rajendrakumar
+  </h3>
 
-            </div>
+</div>
 
             {/* Joint Secretary 2 */}
-            <div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
+<div className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:-translate-y-1 hover:bg-white/10">
 
-              <div className="flex h-28 w-28 items-center justify-center rounded-full bg-zinc-800 text-4xl">
-                👤
-              </div>
+  <div className="flex h-40 w-32 items-center justify-center overflow-hidden rounded-2xl bg-zinc-800">
+    <img
+      src="/Thajudheen.jpg"
+      alt="Mr. TK Thajudheen"
+      className="h-full w-full object-cover object-top"
+    />
+  </div>
 
-              <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
-                Jt. Secretary
-              </p>
+  <p className="mt-7 text-sm font-semibold uppercase tracking-wider text-red-400">
+    Jt. Secretary
+  </p>
 
-              <h3 className="mt-2 text-2xl font-bold">
-                Mr. TK Thajudheen
-              </h3>
+  <h3 className="mt-2 text-2xl font-bold">
+    Mr. TK Thajudheen
+  </h3>
 
-            </div>
-
+</div>
           </div>
         </div>
       </section>
