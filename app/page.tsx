@@ -6,42 +6,45 @@ import { supabase } from "@/lib/supabase";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [galleryImages, setGalleryImages] = useState<string[]>([]);
-const loadGalleryImages = async () => {
-  const { data, error } = await supabase.storage
-    .from("gallery")
-    .list("", {
-      sortBy: {
-        column: "created_at",
-        order: "desc",
-      },
-    });
+  const [message, setMessage] = useState("");
 
-  if (error) {
-    console.error("Gallery load error:", error);
-    return;
-  }
+  const loadGalleryImages = async () => {
+    const { data, error } = await supabase.storage
+      .from("gallery")
+      .list("", {
+        sortBy: {
+          column: "created_at",
+          order: "desc",
+        },
+      });
 
-  const urls = data
-    .filter((file) => file.name)
-    .map((file) => {
-      const { data } = supabase.storage
-        .from("gallery")
-        .getPublicUrl(file.name);
+    if (error) {
+      console.error("Gallery load error:", error);
+      return;
+    }
 
-      return data.publicUrl;
-    });
+    const urls = data
+      .filter((file) => file.name)
+      .map((file) => {
+        const { data: urlData } = supabase.storage
+          .from("gallery")
+          .getPublicUrl(file.name);
 
-  setGalleryImages(urls);
-};
+        return urlData.publicUrl;
+      });
 
-useEffect(() => {
-  loadGalleryImages();
-}, []);
+    setGalleryImages(urls);
+  };
 
+  useEffect(() => {
+    loadGalleryImages();
+  }, []);
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+
 
   return (
     <main className="min-h-screen w-full max-w-full overflow-x-hidden bg-white text-zinc-900">
@@ -61,7 +64,7 @@ useEffect(() => {
   <img
   src="/Indian_Red_Cross_Society_Logo.png"
   alt="Indian Red Cross Society"
-  className="h-17 w-17 object-contain"
+  className="h-[4.25rem] w-[4.25rem] object-contain"
 />
 
   <div>
@@ -75,7 +78,7 @@ useEffect(() => {
   </div>
 </a>
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-7 md:flex translate-x-58">
+          <nav className="hidden items-center gap-7 md:flex translate-x-[14.5rem]">
             <a
               href="#home"
               className="text-sm font-medium transition hover:text-red-600"
@@ -122,7 +125,8 @@ useEffect(() => {
           {/* Desktop Volunteer Button */}
           <a
             href="#volunteer"
-className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-700 sm:block"          >
+            className="hidden translate-x-[7.5rem] rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-red-700 sm:block"
+          >
             Become a Volunteer
           </a>
 
@@ -221,7 +225,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
         <span className="h-px w-10 bg-red-500" />
 
         <span className="text-sm font-semibold uppercase tracking-[0.25em] text-red-400">
-          Kozhikode Branch
+          KOZHIKODE DISTRICT BRANCH 
         </span>
       </div>
 
@@ -306,6 +310,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
         <div className="grid gap-12 lg:grid-cols-2">
 
           <div>
+            <div className="pt-25"></div>
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-600">
               About Us
             </p>
@@ -316,16 +321,12 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
           </div>
 
           <div>
-            <p className="text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-              The Indian Red Cross Society works to alleviate
-              human suffering and support communities through
-              humanitarian service.
+            <p className="text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8 text-justify">
+             The Indian Red Cross Society is a voluntary humanitarian organisation established in 1920 under the Indian Red Cross Society Act XV of 1920. As a member of the International Red Cross and Red Crescent Movement, it works to prevent and alleviate human suffering through humanitarian, health, disaster-response, and community-service activities.
             </p>
 
-            <p className="mt-5 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8">
-              The District Branch brings together dedicated
-              volunteers who serve the community through
-              humanitarian, health and disaster-response activities.
+           <p className="mt-6 text-base leading-7 text-zinc-600 sm:text-lg sm:leading-8 text-justify">
+              The Kozhikode District Branch brings together dedicated volunteers committed to serving communities across the district through humanitarian services, health initiatives, disaster response, first-aid training, and various community-based programmes and activities.
             </p>
           </div>
 
@@ -418,7 +419,7 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
 
     <div className="flex justify-start lg:justify-end">
 
-      <div className="flex h-45 w-45 items-center justify-center rounded-3xl border border-red-500/20 bg-red-500/10 shadow-xl shadow-red-900/20 transition duration-500 hover:scale-105">
+      <div className="flex h-[11.25rem] w-[11.25rem] items-center justify-center rounded-3xl border border-red-500/20 bg-red-500/10 shadow-xl shadow-red-900/20 transition duration-500 hover:scale-105">
         <span className="text-7xl">
           🩸
         </span>
@@ -582,91 +583,133 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
   </div>
 
 </div>
-          {/* =========================
+{/* =========================
     ST JOHN AMBULANCE
 ========================== */}
 <div
   id="st-john-ambulance"
   className="relative mt-20 overflow-hidden rounded-[2rem] border border-white/20 bg-red-600 p-8 text-white shadow-2xl shadow-red-900/20 transition duration-500 hover:-translate-y-2 hover:shadow-2xl sm:p-10 lg:p-14"
 >
-
   <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
 
+    {/* Left Content */}
     <div className="max-w-3xl">
 
-     <h3 className="text-2xl font-extrabold uppercase tracking-tight sm:text-3xl">
-  St John Ambulance
-</h3>
+      <h3 className="text-2xl font-extrabold uppercase tracking-tight sm:text-3xl">
+        St John Ambulance (India)
+      </h3>
 
-     <p className="mt-3 text-lg font-semibold text-red-100 sm:text-xl">
-  First Aid & Emergency Response
-</p>
+      <p className="mt-3 text-lg font-semibold text-red-100 sm:text-xl">
+        First aid & Emergency Response Training
+      </p>
 
       <p className="mt-5 max-w-3xl text-justify text-base leading-7 text-red-50 sm:text-lg sm:leading-8">
-  St. John Ambulance provides internationally valid and Central and
-  State-Government recognised certificate courses in First Aid, BLS,
-  Emergency Care, CPR and AED for driving and conductor licence applicants,
-  railway staff, petroleum and gas company employees, mining and industrial
-  workers, fire and safety personnel, and skilled factory workers in India
-  and overseas.
+        St. John Ambulance provides internationally valid and Central and
+        State-Government recognised certificate courses in First Aid, BLS,
+        Emergency Care, CPR and AED for driving and conductor licence applicants,
+        railway staff, petroleum and gas company employees, mining and industrial
+        workers, fire and safety personnel, and skilled factory workers in India
+        and overseas.
 
-  Training equips individuals with essential lifesaving, emergency response
-  and workplace safety skills.
-</p>
-     <div className="mt-8 grid gap-3 sm:grid-cols-3">
+        Training equips individuals with essential lifesaving, emergency response
+        and workplace safety skills.
+      </p>
 
-  <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-    <p className="font-semibold">First Aid</p>
-    <p className="mt-1 text-sm text-red-100">
-      Practical first-aid training
-    </p>
-  </div>
+      {/* =========================
+          THREE SUB CARDS
+      ========================== */}
+      <div className="mt-8 grid gap-3 sm:grid-cols-3">
 
-  <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-    <p className="font-semibold">Emergency Response</p>
-    <p className="mt-1 text-sm text-red-100">
-      Essential emergency skills
-    </p>
-  </div>
+        {/* Training Session */}
+        <button
+          type="button"
+          onClick={() => {
+            setMessage(
+              "I would like to request First Aid / BLS / CPR Training."
+            );
 
-  <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
-    <p className="font-semibold">Community Service</p>
-    <p className="mt-1 text-sm text-red-100">
-      Supporting people when needed
-    </p>
-  </div>
+            document
+              .getElementById("contact")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="group relative block cursor-pointer overflow-hidden rounded-2xl border border-red-500/40 bg-red-500/10 p-4 text-left shadow-lg shadow-red-900/10 transition duration-500 hover:-translate-y-2 hover:border-red-500/70 hover:bg-red-500/15 hover:shadow-xl hover:shadow-red-900/20"
+        >
+          {/* Animated shine */}
+          <div className="absolute -left-20 top-0 h-full w-16 -skew-x-12 bg-white/10 transition-all duration-700 group-hover:left-[120%]" />
 
-</div>
+          {/* Title + Pulse */}
+          <div className="relative flex items-center justify-between">
+            <p className="font-semibold">
+              Training Session
+            </p>
+
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-2.5 w-2.5 animate-ping rounded-full bg-red-400 opacity-60" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-red-500" />
+            </span>
+          </div>
+
+          <p className="relative mt-1 text-sm text-red-100">
+            Request for First Aid / BLS / CPR Training
+          </p>
+
+          <p className="relative mt-3 text-xs font-semibold text-red-400 opacity-80 transition group-hover:opacity-100">
+            Request Training →
+          </p>
+        </button>
+
+        {/* Emergency Response */}
+        <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
+          <p className="font-semibold">
+            Emergency Response
+          </p>
+
+          <p className="mt-1 text-sm text-red-100">
+            Essential emergency skills
+          </p>
+        </div>
+
+        {/* Community Service */}
+        <div className="rounded-2xl border border-white/10 bg-white/10 p-4 shadow-lg backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-white/15">
+          <p className="font-semibold">
+            Community Service
+          </p>
+
+          <p className="mt-1 text-sm text-red-100">
+            Supporting people when needed
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    {/* Right Side */}
+    <div className="flex flex-col items-start lg:items-center">
+
+      {/* St John Ambulance Logo */}
+      <div className="flex h-44 w-44 items-center justify-center rounded-3xl bg-white p-4 shadow-lg">
+        <img
+          src="/st-john-ambulance-logo.png"
+          alt="St John Ambulance"
+          className="h-full w-full object-contain"
+        />
+      </div>
+
+      {/* Certificate Verification */}
+      <a
+        href="https://ircsfa.org/Home/VerifyCertificate"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group mt-5 w-44 rounded-2xl border border-white/30 bg-white/95 p-4 text-center text-zinc-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-2xl"
+      >
+        <p className="text-xs font-bold text-red-600">
+          Verify Certificate →
+        </p>
+      </a>
 
     </div>
 
-    <div className="flex flex-col items-start lg:items-center">
-
-  {/* St John Ambulance Logo */}
-  <div className="flex h-44 w-44 items-center justify-center rounded-3xl bg-white p-4 shadow-lg">
-    <img
-      src="/st-john-ambulance-logo.png"
-      alt="St John Ambulance"
-      className="h-full w-full object-contain"
-    />
   </div>
-
-  {/* Certificate Verification */}
-  <a
-    href="https://ircsfa.org/Home/VerifyCertificate"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="group mt-5 w-44 rounded-2xl border border-white/30 bg-white/95 p-4 text-center text-zinc-900 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-2xl"
-  >
-    <p className="mt-3 text-xs font-bold text-red-600">
-      Verify Certificate →
-    </p>
-  </a>
-
-</div>
-
-  </div>
-
 </div>
 {/* =========================
     YOUTH RED CROSS (YRC)
@@ -1377,64 +1420,68 @@ className="hidden translate-x-30 rounded-full bg-red-600 px-5 py-3 text-sm font-
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm sm:p-10">
+           {/* Contact Form */}
+<div
+  id="contact-form"
+  className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm sm:p-10"
+>
+  <h3 className="text-2xl font-bold">
+    Send us a message
+  </h3>
 
-              <h3 className="text-2xl font-bold">
-                Send us a message
-              </h3>
+  <p className="mt-2 text-sm text-zinc-500">
+    We'll get back to you as soon as possible.
+  </p>
 
-              <p className="mt-2 text-sm text-zinc-500">
-                We'll get back to you as soon as possible.
-              </p>
+  <form className="mt-8 space-y-5">
 
-              <form className="mt-8 space-y-5">
+    <div>
+      <label className="text-sm font-semibold">
+        Your Name
+      </label>
 
-                <div>
-                  <label className="text-sm font-semibold">
-                    Your Name
-                  </label>
+      <input
+        type="text"
+        placeholder="Enter your name"
+        className="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 outline-none transition focus:border-red-500"
+      />
+    </div>
 
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    className="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 outline-none transition focus:border-red-500"
-                  />
-                </div>
+    <div>
+      <label className="text-sm font-semibold">
+        Email Address
+      </label>
 
-                <div>
-                  <label className="text-sm font-semibold">
-                    Email Address
-                  </label>
+      <input
+        type="email"
+        placeholder="you@example.com"
+        className="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 outline-none transition focus:border-red-500"
+      />
+    </div>
 
-                  <input
-                    type="email"
-                    placeholder="you@example.com"
-                    className="mt-2 w-full rounded-xl border border-zinc-200 px-4 py-3 outline-none transition focus:border-red-500"
-                  />
-                </div>
+    <div>
+      <label className="text-sm font-semibold">
+        Message
+      </label>
 
-                <div>
-                  <label className="text-sm font-semibold">
-                    Message
-                  </label>
+      <textarea
+        rows={5}
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        placeholder="How can we help?"
+        className="mt-2 w-full resize-none rounded-xl border border-zinc-200 px-4 py-3 outline-none transition focus:border-red-500"
+      />
+    </div>
 
-                  <textarea
-                    rows={5}
-                    placeholder="How can we help?"
-                    className="mt-2 w-full resize-none rounded-xl border border-zinc-200 px-4 py-3 outline-none transition focus:border-red-500"
-                  />
-                </div>
+    <button
+      type="button"
+      className="w-full rounded-xl bg-red-600 px-6 py-4 text-sm font-bold text-white transition hover:bg-red-700"
+    >
+      Send Message
+    </button>
 
-                <button
-                  type="button"
-                  className="w-full rounded-xl bg-red-600 px-6 py-4 text-sm font-bold text-white transition hover:bg-red-700"
-                >
-                  Send Message
-                </button>
-
-              </form>
-            </div>
+  </form>
+</div>
 
           </div>
         </div>
