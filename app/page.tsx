@@ -1420,7 +1420,7 @@ export default function Home() {
               </div>
             </div>
 
-           {/* Contact Form */}
+          {/* Contact Form */}
 <div
   id="contact-form"
   className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm sm:p-10"
@@ -1473,19 +1473,43 @@ export default function Home() {
       />
     </div>
 
-    <button
-      type="button"
-      className="w-full rounded-xl bg-red-600 px-6 py-4 text-sm font-bold text-white transition hover:bg-red-700"
-    >
-      Send Message
-    </button>
+    <div className="space-y-3">
+
+      {/* Send Message */}
+      <button
+        type="button"
+        className="w-full rounded-xl bg-red-600 px-6 py-4 text-sm font-bold text-white transition hover:bg-red-700"
+      >
+        Send Message
+      </button>
+
+      {/* WhatsApp */}
+      <a
+  href="https://wa.me/+919447222304"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex w-full items-center justify-center gap-2 rounded-xl border border-green-500 bg-green-50 px-6 py-4 text-sm font-bold text-green-700 transition hover:bg-green-100"
+>
+  <svg
+    viewBox="0 0 32 32"
+    className="h-5 w-5"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M16 3C8.82 3 3 8.82 3 16c0 2.29.59 4.44 1.71 6.35L3.08 29l6.83-1.59A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-1.98 0-3.91-.53-5.61-1.54l-.4-.24-4.05.94.97-3.94-.26-.41A10.69 10.69 0 1 1 16 26.7Zm5.86-8.02c-.32-.16-1.9-.94-2.19-1.04-.29-.11-.5-.16-.71.16-.21.32-.81 1.04-.99 1.25-.18.21-.37.24-.68.08-.32-.16-1.34-.49-2.55-1.57-.94-.84-1.57-1.87-1.75-2.18-.18-.32-.02-.49.14-.65.14-.14.32-.37.47-.55.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.6c-.21 0-.55.08-.84.4-.29.32-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.76.75.32 1.34.51 1.8.65.76.24 1.45.21 2 .13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.6-.37Z" />
+  </svg>
+
+  Chat with us on WhatsApp
+</a>
+
+    </div>
 
   </form>
 </div>
 
-          </div>
-        </div>
-      </section>
+</div>
+</div>
+</section>
 
       {/* =========================
           FOOTER
