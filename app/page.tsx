@@ -1239,6 +1239,194 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+{/* =========================
+    TALUK-WISE LEADERSHIP
+========================= */}
+<section className="bg-zinc-950 px-6 pb-28 text-white lg:px-8">
+  <div className="mx-auto max-w-7xl">
+
+    <div className="max-w-2xl">
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-red-400">
+        Taluk Leadership
+      </p>
+
+      <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+        Serving across Kozhikode.
+      </h2>
+
+      <p className="mt-5 leading-7 text-zinc-400">
+        Connect with our taluk-level office bearers for local
+        coordination and Red Cross activities.
+      </p>
+    </div>
+
+    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+      {/* Kozhikode Taluk */}
+      <div className="group rounded-3xl border border-white/10 bg-white/5 p-7 transition hover:-translate-y-1 hover:bg-white/10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/10 text-red-400">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            className="h-6 w-6"
+          >
+            <path d="M12 21s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12Z" />
+            <circle cx="12" cy="9" r="2.5" />
+          </svg>
+        </div>
+
+        <h3 className="mt-5 text-xl font-bold">Kozhikode Taluk</h3>
+
+        <div className="mt-6 space-y-5">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Chairman
+            </p>
+            <p className="mt-1 font-semibold leading-6">
+              Mr. Arangil Gireesh Kumar
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Secretary
+            </p>
+            <p className="mt-1 font-semibold leading-6">
+              Mr. KK Rajendrakumar
+            </p>
+          </div>
+        </div>
+
+        <a
+          href="tel:+919447122783"
+          className="mt-7 flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold transition hover:border-red-400/50 hover:bg-red-500/10"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-red-400">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.08 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.69A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          <span>+91 94471 22783</span>
+        </a>
+      </div>
+
+      {/* Koyilandy Taluk */}
+      <div className="group rounded-3xl border border-white/10 bg-white/5 p-7 transition hover:-translate-y-1 hover:bg-white/10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/10 text-red-400">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6">
+            <path d="M12 21s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12Z" />
+            <circle cx="12" cy="9" r="2.5" />
+          </svg>
+        </div>
+
+        <h3 className="mt-5 text-xl font-bold">Koyilandy Taluk</h3>
+
+        <div className="mt-6 space-y-5">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Chairman
+            </p>
+            <p className="mt-1 font-semibold leading-6">Mr. KK Rajan</p>
+          </div>
+
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Secretary
+            </p>
+            <p className="mt-1 font-semibold leading-6">Mr. Bijith RC</p>
+          </div>
+        </div>
+
+        <a href="tel:+919496551181" className="mt-7 flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold transition hover:border-red-400/50 hover:bg-red-500/10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-red-400">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.08 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.69A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          <span>+91 94965 51181</span>
+        </a>
+      </div>
+
+      {/* Thamarassery Taluk */}
+      <div className="group rounded-3xl border border-white/10 bg-white/5 p-7 transition hover:-translate-y-1 hover:bg-white/10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/10 text-red-400">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6">
+            <path d="M12 21s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12Z" />
+            <circle cx="12" cy="9" r="2.5" />
+          </svg>
+        </div>
+
+        <h3 className="mt-5 text-xl font-bold">Thamarassery Taluk</h3>
+
+        <div className="mt-6 space-y-5">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Chairman
+            </p>
+            <p className="mt-1 font-semibold leading-6">Shan Kattippara</p>
+          </div>
+
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Secretary
+            </p>
+            <p className="mt-1 font-semibold leading-6">
+              Mr. KK Abdurahiman Kutty
+            </p>
+          </div>
+        </div>
+
+        <a href="tel:+919946218457" className="mt-7 flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold transition hover:border-red-400/50 hover:bg-red-500/10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-red-400">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.08 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.69A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          <span>+91 99462 18457</span>
+        </a>
+      </div>
+
+      {/* Vatakara Taluk */}
+      <div className="group rounded-3xl border border-white/10 bg-white/5 p-7 transition hover:-translate-y-1 hover:bg-white/10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-500/10 text-red-400">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-6 w-6">
+            <path d="M12 21s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12Z" />
+            <circle cx="12" cy="9" r="2.5" />
+          </svg>
+        </div>
+
+        <h3 className="mt-5 text-xl font-bold">Vatakara Taluk</h3>
+
+        <div className="mt-6 space-y-5">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Chairman
+            </p>
+            <p className="mt-1 font-semibold leading-6">
+              Prof. KK Mehamood
+            </p>
+          </div>
+
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-red-400">
+              Secretary
+            </p>
+            <p className="mt-1 font-semibold leading-6">
+              K P Chandrasekharan
+            </p>
+          </div>
+        </div>
+
+        <a href="tel:+919846827365" className="mt-7 flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold transition hover:border-red-400/50 hover:bg-red-500/10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5 text-red-400">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.8a2 2 0 0 1-.45 2.11L8.08 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.69A2 2 0 0 1 22 16.92Z" />
+          </svg>
+          <span>+91 98468 27365</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
      {/* =========================
     VOLUNTEER CTA
